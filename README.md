@@ -2,7 +2,7 @@
 permission de django rest framework
 
 
-*Ajouter le chemin de django login framework dans l'url du projet
+* Ajouter le chemin de django login framework dans l'url du projet
 
 ```python
  path('api-auth/',include('rest_framework.urls'))
@@ -10,7 +10,7 @@ permission de django rest framework
 
 ```
 
-*ensuite importer permissions dans notre apiviews.py
+* ensuite importer permissions dans notre apiviews.py
 
 ```python 
     from rest_framework import permissions
@@ -21,10 +21,10 @@ Maintenant Nous allons donner une permission a notre CategoriesViewSet ajouter l
 ```python
   permission_classes = (permissions.IsAuthenticatedOrReadOnly,)
 ```
-*ici on donne la permission de lecture simple la classe de notre api tand que l'ulisateur n'est par connecter il ne pourra par effectuer d'action de crud sur la classe
+* ici on donne la permission de lecture simple la classe de notre api tand que l'ulisateur n'est par connecter il ne pourra par effectuer d'action de crud sur la classe
 
 ## Permissions de globale par defaut
-*dans le seting.py de du projet declarer 
+* dans le seting.py de du projet declarer 
 
 ```python
 
